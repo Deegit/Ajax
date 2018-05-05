@@ -24,7 +24,8 @@
   function alertContents() {
     if (httpRequest.readyState === XMLHttpRequest.DONE) {
       if (httpRequest.status === 200) {
-        alert(httpRequest.responseText);
+        /*alert(httpRequest.responseText);*/
+        alert(httpRequest.responseXML);
         /*document.write(httpRequest.responseText);*/
       } else {
         alert('There was a problem with the request.');
