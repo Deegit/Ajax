@@ -1,1 +1,1 @@
-# Deegitajax.github.io
+# deegit.github.io/ajx/
