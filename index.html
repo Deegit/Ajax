@@ -26,6 +26,7 @@
       if (httpRequest.status === 200) {
         /*alert(httpRequest.responseText);*/
         document.write(httpRequest.responseText);
+        httpRequest.close();
       } else {
         alert('There was a problem with the request.');
       }
