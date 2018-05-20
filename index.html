@@ -3,11 +3,6 @@
 	<link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css"></link>
 	<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
-	<script type="text/javascript" charset="utf-8">
-	$(document).ready(function() {
-			$('.example').dataTable();
-		} );
-	</script>
 </head>
 <body>
 <button id="ajaxButton" type="button">Make a request</button>
@@ -44,7 +39,7 @@
 </script>
 
 <h1>Live example</h1>
-<table cellpadding="0" cellspacing="0" border="0" class="display" class="example">
+<table cellpadding="0" cellspacing="0" border="0" class="display example">
 	<thead>
 		<tr>
 			<th>Rendering engine</th>
@@ -469,7 +464,7 @@
 		</tr>
 	</tfoot>
 </table>
-<table border="1" cellpadding="1" class="example" style="width: 100%;">
+<table border="1" cellpadding="1" class="display example" style="width: 100%;">
 	<thead>
 		<tr>
 			<th style="width: 25%;">Year</th>
@@ -625,6 +620,10 @@
 		</tr>
 	</tbody>
 </table>
-
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function() {
+			$('.example').dataTable();
+		} );
+</script>
 </body>
 </html>
