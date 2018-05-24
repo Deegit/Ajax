@@ -8,9 +8,29 @@
 		.stars2::after {content:"** see below"}
 		.stars3::after {content:"*** see below"}
 		.stars4::after {content:"**** see below"}
+		.scrolltest {background-color: f00; padding: 50px;}
 	</style>
+	<script>
+		var el = $('.scrolltest');
+var elpos_original = el.offset().top;
+
+ $(window).scroll(function(){
+     var elpos = el.offset().top;
+     var windowpos = $(window).scrollTop();
+     var finaldestination = windowpos;
+     if(windowpos<elpos_original) {
+         finaldestination = elpos_original;
+         el.stop().animate({'top':400},500);
+     } else {
+         el.stop().animate({'top':windowpos+10},500);
+     }
+});
+
+	</script>
 </head>
 <body>
+<div class="scrolltest"> Test of SCROLL </div>
+	
 <button id="ajaxButton" type="button">Make a request</button>
 
 <script>
