@@ -8,7 +8,7 @@
 		.stars2::after {content:"** see below"}
 		.stars3::after {content:"*** see below"}
 		.stars4::after {content:"**** see below"}
-		.scrolltest {background-color: f00; padding: 50px; display: block; position: relative; width: 300px; height: 600px; float: right;}
+		.scrolltest {background-color: #f00; padding: 50px; display: block; position: relative; width: 300px; height: 600px; float: right;}
 	</style>
 	<script>
 		var el = $('.scrolltest');
@@ -20,9 +20,9 @@ var elpos_original = el.offset().top;
      var finaldestination = windowpos;
      if(windowpos<elpos_original) {
          finaldestination = elpos_original;
-         el.stop().animate({'top':400},500);
+         el.stop().animate({'top':0},100);
      } else {
-         el.stop().animate({'top':windowpos+10},500);
+         el.stop().animate({'top':windowpos+10},100);
      }
 });
 
