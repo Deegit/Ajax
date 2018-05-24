@@ -8,7 +8,7 @@
 		.stars2::after {content:"** see below"}
 		.stars3::after {content:"*** see below"}
 		.stars4::after {content:"**** see below"}
-		.scrolltest {background-color: #f00; padding: 50px; display: block; position: relative; width: 300px; height: 600px; float: right;}
+		.scrolltest {background-color: #f00; padding: 50px; display: block; position: relative; width: 300px; height: 600px; float: right;z-index:1000;}
 	</style>
 	<script>
 		var el = $('.scrolltest');
@@ -29,7 +29,7 @@ var elpos_original = el.offset().top;
 	</script>
 </head>
 <body>
-<div class="scrolltest"> Test of SCROLL </div>
+
 	
 <button id="ajaxButton" type="button">Make a request</button>
 
@@ -646,6 +646,7 @@ var elpos_original = el.offset().top;
 		</tr>
 	</tbody>
 </table>
+<div class="scrolltest"> Test of SCROLL </div>
 <script type="text/javascript" charset="utf-8">
 	$(document).ready(function() {
 			$('.example').dataTable();
