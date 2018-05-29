@@ -1,0 +1,144 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<!--
+     This script downloaded from www.JavaScriptBank.com
+     Come to view and download over 2000+ free javascript at www.JavaScriptBank.com
+-->
+
+<head>
+	<title>Typing Test</title>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<meta http-equiv="content-language" content="en">
+	<meta name="keywords" lang="en" content="a typing test, - JavaScript will, this is neat, I really think, tell you the, a typing test, actually give you, " />
+	<meta name="description" lang="en" content="I really think this is neat - &lt;a href=&quot;/javascript/&quot;&gt;JavaScript&lt;/a&gt; will actually give you a typing test and at then tell you the results in words per minute! Very neat!" />
+	<meta name="author" content="http://www.javascriptbank.com" />
+	<meta name="distribution" content="Global" />
+	<meta name="copyright" content="JavaScriptBank.com" />
+	<meta name="robots" content="follow,index" />
+	<link href="/templates/jsb.V8/images/favicon.ico" rel="shortcut icon" />
+	<style type="text/css">
+	.jsbank_sample_cont {margin: 20px; padding: 20px;}
+	.jsbank_sample_tit {font-weight: bold; margin-bottom: 10px; padding: 5px; width: auto; background-color: #c0c0c0; border: 5px solid #a0a0a0; color: black; text-align: center;}
+	</style>
+</head>
+
+<body>
+
+<center>
+<h1>Typing Test</h1>
+<table border="0" width="800px" cellspacing="0" cellpadding="0">
+	<tr>
+		<td>
+		<p align="left">I really think this is neat - <a href="/javascript/">JavaScript</a> will actually give you a typing test and at then tell you the results in words per minute! Very neat!</p>
+		</td>
+	</tr>
+</table>
+<br>
+<!--<script type="text/javascript">
+google_ad_client = "pub-8741228267140329";
+google_ad_slot = "0485711471";
+google_ad_width = 468;
+google_ad_height = 60;
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+<script type="text/javascript">
+google_ad_client = "pub-8741228267140329";
+google_ad_slot = "0485711471";
+google_ad_width = 468;
+google_ad_height = 60;
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>-->
+		<script type="text/javascript">
+			google_ad_client = "pub-8741228267140329";
+			google_ad_slot = "5258169617";
+			google_ad_width = 728;
+			google_ad_height = 90;
+		</script>
+		<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script><br><br>
+<code>Over 2000+ free Javascript<br>
+at <a href="http://javascriptbank.com">JavaScriptBank.com Website</a></code><br>
+<fieldset class=jsbank_sample_cont>
+	<legend class=jsbank_sample_tit align=center>Sampled by JavaScriptBank.com</legend>
+<script language="JavaScript">
+<!-- Begin
+
+// Michael Tartaglia (stonedstan@hotmail.com)
+
+
+
+msg = new Array("Practicing with your typing can greatly help your overall computer skills.",
+"A new computer is sold in the US every hour!",
+"When do birds migrate from North to South?",
+"Perplexing phrases, like this one, are tougher to type.")
+word = 10
+function m() {
+msg = new Array("Practicing with your typing can greatly help your overall computer skills.",
+"A new computer is sold in the US every hour!",
+"When do birds migrate from North to South?",
+"Perplexing phrases, like this one, are tough to type.")
+word = 10
+}
+function e() {
+msg = new Array("If you can correctly, and quickly, type this perplexing sentence, you are one superb typist!",
+"You are one superb typist if you can correctly, and quickly, type this long phrase.",
+"I believe you're a good typist, so I believe you will correctly copy this statement!",
+"Because this is not a fairly simple phrase, could you swiftly, and precisely, copy it?")
+word = 15
+}
+function s() {
+msg = new Array("Computers are the medium of the future.",
+"Can you type this phrase rather quickly?",
+"Who is the President of the US?",
+"I believe that you can type well!")
+word = 7
+}
+function beginIt() {
+randNum = Math.floor((Math.random() * 10)) % 4
+msgType = msg[randNum]
+day = new Date();
+startType = day.getTime();
+document.theForm.given.value = msgType
+document.theForm.typed.focus();
+document.theForm.typed.select();
+}
+function cheat() {
+alert("You can not change that!");
+document.theForm.typed.focus();
+}
+function stopIt() {
+dayTwo = new Date();
+endType = dayTwo.getTime();
+totalTime = ((endType - startType) / 1000)
+spd = Math.round((word/totalTime) * 60)
+if (document.theForm.typed.value == document.theForm.given.value) {
+alert("\nYou typed a " + word + " word sentence in " 
++ totalTime + " seconds, a speed of about " + spd + " words per minute!")
+}
+else {
+alert("You made an error, but typed at a speed of " + spd + " words per minute.")
+   }
+}
+// End -->
+</script>
+<form name="theForm">
+<table border="3" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td>Are you a....</td>
+<td align="center"><input type="radio" name="sme" value="Beginner" onclick="s()" checked="checked">Beginner
+<input type="radio" name="sme" value="Novice" onclick="m()">Novice
+<input type="radio" name="sme" value="Expert" onclick="e()">Expert</td>
+</tr>
+<tr><td colspan="2"><br>
+<center><input type="button" value="Start Typing Test" name="start" onclick="beginIt()"></center><p>
+<textarea name="given" cols="53" rows="3" wrap="on" onfocus="cheat()"></textarea></p></td>
+</tr>
+<tr><td colspan="2"><center><input type="text" name="typed" size="45">
+<input type="button" value="DONE" name="stop" onclick="stopIt()"></center></td>
+</tr>
+</tbody></table></form>
+</fieldset>
+</center>
+</body>
+
+</html>
